@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="my portfolio">
+    <meta name="author" content="Devcrud">
+    <title>My Portfolio | Heriadi</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body>
+
+    <div class="col">
+        <div>
+            <div class="text-center md-4 mt-4">
+                <h4>Tugas Algoritma & Struktur Data</h4>
+            </div>
+            <div class="text-center md-5 mt-4">
+                <h1 id="luasSegitiga">Luas Segitiga</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+
+                    <div class="card">
+                        <div class="mt-3 mb-4">
+                            <div class="col">
+                                <label for="alas" class="form-label">Alas</label>
+                                <div class="form-group">
+                                    <input type="number" name="alas" class="form-control" id="alas" placeholder="Masukkan Nilai Alas">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="tinggi" class="form-label">Tinggi</label>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="tinggi" placeholder="Masukkan Nilai Tinggi">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="btn-sm btn-primary" onclick="hitungLuasSegitiga()">Hitung</button>
+                                <a href="index.html" class="btn btn-warning btn-sm">Kembali</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function hitungLuasSegitiga() {
+            var alas = parseFloat(document.getElementById("alas").value);
+            var tinggi = parseFloat(document.getElementById("tinggi").value);
+            var luas = (alas * tinggi) / 2;
+            document.getElementById("luasSegitiga").innerText = "Luas Segitiga: " + luas;
+        }
+    </script>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
